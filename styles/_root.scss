@@ -1,0 +1,21 @@
+// variables (using CSS var() so you can still theme from :root if desired)
+$bg: var(--bg);
+$text: var(--text);
+$muted: var(--muted);
+$pill-bg: var(--pill-bg);
+$button-bg: var(--button-bg);
+$button-text: var(--button-text);
+
+:root {
+    --main-blue: rgb(16, 20, 74);
+  /* Base scaling */
+  --font-size-base: 16px; /* browsers usually default to 16px */
+
+  /* Font sizes with clamp(min, preferred, max) */
+  --font-size-xs: clamp(0.75rem, 0.7vw, 0.875rem); /* ~12–14px */
+  --font-size-sm: clamp(0.875rem, 0.9vw, 1rem); /* ~14–16px */
+  --font-size-md: clamp(1rem, 1vw, 1.125rem); /* ~16–18px */
+  --font-size-lg: clamp(1.25rem, 1.5vw, 1.5rem); /* ~20–24px */
+  --font-size-xl: clamp(1.5rem, 2vw, 2rem); /* ~24–32px */
+  --font-size-xxl: clamp(2rem, 3vw, 3rem); /* ~32–48px */
+}

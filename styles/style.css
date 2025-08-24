@@ -1,118 +1,257 @@
+@charset "UTF-8";
 :root {
-  --bg: #ffffff;
-  --text: #0b1220;
-  --muted: #6b6f76;
-  --accent: #0b1220;
-  --pill-bg: #ffffff;
-  --button-bg: #0b1220;
-  --button-text: #fff;
+  --main-blue: rgb(16, 20, 74);
+  /* Base scaling */
+  --font-size-base: 16px; /* browsers usually default to 16px */
+  /* Font sizes with clamp(min, preferred, max) */
+  --font-size-xs: clamp(0.75rem, 0.7vw, 0.875rem); /* ~12–14px */
+  --font-size-sm: clamp(0.875rem, 0.9vw, 1rem); /* ~14–16px */
+  --font-size-md: clamp(1rem, 1vw, 1.125rem); /* ~16–18px */
+  --font-size-lg: clamp(1.25rem, 1.5vw, 1.5rem); /* ~20–24px */
+  --font-size-xl: clamp(1.5rem, 2vw, 2rem); /* ~24–32px */
+  --font-size-xxl: clamp(2rem, 3vw, 3rem); /* ~32–48px */
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: var(--bg);
-  color: var(--text);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.35;
-}
-
-/* NAV */
-.nav {
-  position: fixed;
-  top: 22px;
-  left: 36px;
+header {
   display: flex;
-  gap: 18px;
-  align-items: center;
-  z-index: 40;
-}
-
-.nav .brand {
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.nav .sub {
-  color: var(--muted);
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.nav-right {
-  position: fixed;
-  right: 26px;
-  top: 18px;
-  z-index: 40;
-}
-
-.github-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
-  border: 0;
-  background: transparent;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+header nav {
+  width: 90%;
+  max-width: 1700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+@media screen and (max-width: 790px) {
+  header nav {
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+}
+
+.container-logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container-logo-title .logo-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+}
+@media (width <= 768px) {
+  .container-logo-title .logo-img {
+    width: 43px;
+    height: 43px;
+  }
+}
+@media (width <= 425px) {
+  .container-logo-title .logo-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.container-logo-title h1 {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+
+.nav-link {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.nav-link a {
+  font-size: var(--font-size-md);
+  font-weight: bold;
+  border-top: transparent 2px solid;
+  border-bottom: 2px solid transparent; /* reserve space */
+  transition: border-color 0.3s ease; /* smooth effect */
+}
+.nav-link a:nth-child(2) {
+  border-bottom: 2px solid white;
+}
+.nav-link a:hover {
+  border-bottom: white; /* only color changes */
+}
+@media screen and (max-width: 790px) {
+  .nav-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .social-media {
+    display: none;
+  }
+}
+.social-media .button-26 {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  background-color: #1652f0;
+  border: 1px solid #1652f0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.social-media .button-26 a {
+  color: var(--main-color-text);
+}
+.social-media .button-26:disabled {
+  opacity: 0.5;
+}
+.social-media .button-26:focus {
+  outline: 0;
+}
+.social-media .button-26:hover {
+  background-color: #0a46e4;
+  border-color: #0a46e4;
+}
+.social-media .button-26:active {
+  background-color: #0039d7;
+  border-color: #0039d7;
+}
+
+/* Reset for links inside buttons */
+button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hamburger style */
+.hamburger {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: var(--main-color-text);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Menu (hidden by default) */
+.menubar {
+  display: none;
+  position: absolute;
+  top: 70px; /* adjust to your header height */
+  right: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.menubar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menubar ul li {
+  margin: 10px 0;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Show when active */
+.menubar.active {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-link,
+  .social-media {
+    display: none; /* hide desktop nav */
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+/* Hamburger animation (turn into "X") */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* HERO */
 .hero {
-  min-height: 72vh;
+  min-height: 83vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 110px 24px 60px;
-  /* leave space for fixed nav */
   text-align: center;
 }
-
-.hero-inner {
+.hero .hero-inner {
   max-width: 980px;
-  width: 100%;
-  margin: 0 auto;
+  line-height: 1.4rem;
 }
-
-.insta-pill {
+.hero .insta-pill {
   display: inline-block;
   padding: 8px 16px;
   border-radius: 999px;
   background: var(--pill-bg);
-  box-shadow: 0 1px 0 rgba(10, 10, 10, 0.04), inset 0 0 0 1px rgba(11, 18, 32, 0.06);
+  box-shadow: 0 2px 0 rgba(10, 10, 10, 0.04), inset 0 0 0 2px rgba(11, 18, 32, 0.06);
   font-weight: 600;
   font-size: 13px;
   margin-bottom: 18px;
 }
-
-/* Big two-line title */
-.title {
-  font-weight: 800;
+.hero .title {
+  font-weight: 600;
   font-size: clamp(34px, 7.8vw, 86px);
   letter-spacing: -1px;
   margin: 8px 0 18px;
   line-height: 0.98;
 }
-
-.subtitle {
+.hero .subtitle {
   color: var(--muted);
   font-weight: 500;
   font-size: 18px;
   max-width: 740px;
   margin: 8px auto 26px;
 }
-
-.cta-row {
+.hero .cta-row {
   display: flex;
   gap: 12px;
   justify-content: center;
@@ -120,21 +259,20 @@ body {
   margin-top: 8px;
 }
 
+/* Buttons */
 .btn {
   border-radius: 8px;
   padding: 10px 18px;
   min-width: 72px;
-  border: 1px solid rgba(11, 18, 32, 0.06);
+  border: 2px solid rgba(11, 18, 32, 0.06);
   background: #fff;
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 1px 0 rgba(10, 10, 10, 0.03);
 }
-
 .btn.secondary {
   background: #fff;
 }
-
 .btn.primary {
   background: var(--button-bg);
   color: var(--button-text);
@@ -142,17 +280,11 @@ body {
   box-shadow: 0 6px 18px rgba(11, 18, 32, 0.08);
 }
 
-/* Spacer to emulate large empty area in design */
-.spacer {
-  height: 160px;
-}
-
 /* About section */
 .about {
   padding: 40px 24px 120px;
   text-align: center;
 }
-
 .about h2 {
   font-size: 44px;
   margin: 40px 0 10px;
@@ -171,7 +303,7 @@ body {
   .hero {
     padding-top: 84px;
   }
-  .subtitle {
+  .hero .subtitle {
     font-size: 15px;
   }
   .about h2 {
@@ -183,4 +315,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #0b1220;
+  --muted: #6b6f76;
+  --accent: #0b1220;
+  --pill-bg: #ffffff;
+  --button-bg: #0b1220;
+  --button-text: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.3;
+}
+
+a {
+  color: var(--main-color-text);
+  text-decoration: none;
+  font-size: var(--font-size-base);
 }/*# sourceMappingURL=style.css.map */
