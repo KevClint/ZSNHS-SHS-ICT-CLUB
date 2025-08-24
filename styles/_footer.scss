@@ -1,82 +1,125 @@
-/* footer or tiil sa webiste */
+/* Footer Styles */
 footer {
+  background: #ffffff;
+  color: black;
+  padding: 50px 0 30px;
+  margin-top: 80px;
+  border-top: 1.5px solid;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid;
-  padding-top: 40px;
-  padding-bottom: 40px;
+}
 
-  & .container {
-    width: 90%;
-    max-width: 1600px;
-    display: flex;
+.header-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.header-info a {
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.header-info a:hover {
+  color: #667eea;
+}
+
+.header-info a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #667eea;
+  transition: width 0.3s ease;
+}
+
+.header-info a:hover::after {
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.164);
+  border-radius: 50%;
+  color: black;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  background: #667eea;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.rights {
+  border-top: 1px solid black;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rights p {
+  margin: 0;
+  color: black;
+  font-size: 0.9rem;
+}
+
+.rightsicon {
+  margin: 0 5px;
+  font-size: 1.1rem;
+}
+
+/* Footer Responsive Design */
+@media screen and (max-width: 790px) {
+  .header-info {
+    gap: 20px;
+  }
+
+  .socials {
+    gap: 15px;
+  }
+
+  .rights {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-info {
     flex-direction: column;
-    gap: 25px;
-    color: var(--text-color2);
+    gap: 15px;
+  }
 
-    & .header-info {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-
-      & a {
-        text-decoration: none;
-        color: green($color: #000000);
-      }
-    }
-    & .socials {
-      display: inline-flex;
-      justify-content: center;
-      gap: 20px;
-      font-size: 2rem;
-      text-decoration: none;
-
-      & a {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        border-radius: 7px;
-        padding: 10px;
-        padding-inline: 20px;
-        background-color: beige;
-        filter: drop-shadow(0px 0px 1px);
-      }
-      & a:nth-child(1) {
-        color: yellow;
-      }
-      & a:nth-child(2) {
-        color: red;
-      }
-      & a:nth-child(3) {
-        color: blue;
-      }
-      & a:nth-child(4) {
-        color: black;
-      }
-    }
-    & .rights {
-      display: inline-flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      visibility: inherit;
-      text-align: center;
-
-      & .last-rights {
-        height: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-      }
-      & .rightsicon {
-        font-size: 1.5rem;
-      }
-    }
+  .socials a {
+    width: 45px;
+    height: 45px;
   }
 }

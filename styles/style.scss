@@ -42,7 +42,7 @@ a {
 }
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;   
   gap: 45px;
 }
 
@@ -92,7 +92,12 @@ main {
   }
 
   .c-buttons a {
-    padding: 10px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 26px;
+    width: 95%;
+    max-width: 340px;
     border-radius: 8px;
     background: linear-gradient(135deg, #0ea5e9, #6366f1);
     color: white;

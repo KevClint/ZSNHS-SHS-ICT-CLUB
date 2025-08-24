@@ -17,20 +17,22 @@
         <nav>
             <div class="container-logo-title">
                 <img src="assets/icons/ICT CLUB-title-n-bg-gimp.png" alt="ICT CLUB logo image" class="logo-img">
-                <h1>
-                    ICT Club
-                </h1>
+                <a href="https://www.facebook.com/profile.php?id=61578725763399">
+                    <h1>
+                        ICT Club
+                    </h1>
+                </a>
 
             </div>
 
             <div class="nav-link">
-                <a href="#">
+                <a href="#home">
                     HOME
                 </a>
-                <a href="#">
+                <a href="#about">
                     ABOUT
                 </a>
-                <a href="#">
+                <a href="#events">
                     EVENT
                 </a>
                 <a href="./pages/contact/contact.html">
@@ -48,19 +50,19 @@
             <div class="menubar">
                 <ul>
                     <li>
-                        <a href="#aboutme">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#skills">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="">Event</a>
+                        <a href="#events">Event</a>
                     </li>
                     <li>
                         <a href="./pages/contact/contact.html">Contact</a>
                     </li>
                     <li>
-                        <a href="#">Facebook Page</a>
+                        <a href="https://www.facebook.com/profile.php?id=61578725763399">Facebook Page</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +72,9 @@
     <main>
         <section class="hero" id="home">
             <div class="hero-inner">
-                <div class="insta-pill">Follow along on Facebook!</div>
+                <a href="https://www.facebook.com/profile.php?id=61578725763399">
+                    <div class="insta-pill">Follow along on Facebook!</div>
+                </a>
                 <h1 class="title">The <u>ICT Club</u> of<br />Zamboanga Del Sur National High School <u>Senior High
                         School</u></h1>
                 <p class="subtitle">Meet the Faces Behind ICT CLUB </p>
@@ -90,19 +94,23 @@
                     alt="arrow down on about ICT club">
             </div>
             <div class="parent">
-                <div class="whole-box">
+                <div class="whole-box tanan-box">
                     <p class="title-box">Background</p>
                     <p class="info-box">The ICT Club at ZSNHS-SHS helps students explore computing fundamentals through
                         short
                         tutorials followed by hands-on
                         projects, creating a welcoming space for beginners and advanced learners.</p>
                 </div>
-                <div class="whole-box2">
+                <div class="whole-box2 tanan-box">
                     <p class="title-box">Goal</p>
                     <p class="info-box">Our goal is to build practical tech skills, encourage creative problem-solving,
                         and prepare
                         members for competitions,
                         internships, and future careers in IT.</p>
+                </div>
+                <div class="whole-box3 tanan-box">
+                    <p class="title-box">Wazaaaa</p>
+                    <p class="info-box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, necessitatibus dolorum vero aspernatur possimus nemo voluptatum dolor dignissimos tempore aliquid odio atque nam, quisquam non fuga id error officiis. Veniam?</p>
                 </div>
             </div>
         </sections>
@@ -319,49 +327,88 @@
             <a href="./pages/officers-teachers/officers.html">OFFICERS</a>
         </div>
 
-
+        <section class="main-content" id="events">
+            <div class="page-title">
+                <h1>ICT Club Events</h1>
+                <div class="title-underline"></div>
+            </div>
         
-
-        <section class="events" id="events">
-            <div class="event-container">
-                <div class="title-event">
-                     ICT Club Events
-                </div>
-                
-                <div class="esport">
-                    <div class="esport-title">
-                        <h1>ZSNHS-SHS ESPORTS: ML & CODM 2025</h1>
-                        <p>Get ready for action! The ICT Club proudly presents the Esports Tournament featuring Mobile Legends: Bang Bang and Call
-                        of Duty: Mobile this September. <br>
-                        📅 Date: September 12 and 26 👀 <br>
-                        🕐 Time: 12:30 PM – 4:30 PM <br>
-                        📍 Venue: Building C, 4th Floor, Computer Laboratory</p>
-                        <a href="https://ictclub-esports-2025.vercel.app/" class="view-event">
-                            <button>VIEW THE OFFICIAL BRACKET</button>
-                        </a>
+            <div class="events-container">
+                <!-- Esports Event -->
+                <div class="event-card">
+                    <div class="event-content">
+                        <div class="event-details">
+                            <div class="event-badge">🎮 Featured Event</div>
+        
+                            <h2 class="event-title">ZSNHS-SHS ESPORTS: ML & CODM 2025</h2>
+        
+                            <p class="event-description">
+                                Get ready for action! The ICT Club proudly presents the Esports Tournament featuring Mobile
+                                Legends: Bang Bang and Call of Duty: Mobile this September.
+                            </p>
+        
+                            <div class="event-info-grid">
+                                <div class="info-card">
+                                    <span class="info-icon">📅</span>
+                                    <div class="info-text">September 12 & 26</div>
+                                </div>
+                                <div class="info-card">
+                                    <span class="info-icon">🕐</span>
+                                    <div class="info-text">12:30 PM – 4:30 PM</div>
+                                </div>
+                                <div class="info-card">
+                                    <span class="info-icon">📍</span>
+                                    <div class="info-text">Building C, 4th Floor</div>
+                                </div>
+                            </div>
+        
+                            <a href="https://ictclub-esports-2025.vercel.app/" target="_blank" class="event-button">
+                                VIEW OFFICIAL BRACKET →
+                            </a>
+                        </div>
+        
+                        <div class="image-gallery">
+                            <img src="/assets/images/codm.jpg" alt="Call of Duty Mobile Tournament" class="gallery-image"
+                                onclick="openModal(this.src, this.alt)">
+                            <img src="/assets/images/ml.jpg" alt="Mobile Legends Tournament" class="gallery-image"
+                                onclick="openModal(this.src, this.alt)">
+                            <img src="/assets/images/schedule.jpg" alt="Tournament Schedule" class="gallery-image"
+                                onclick="openModal(this.src, this.alt)">
+                        </div>
                     </div>
-                    
-                    <div class="esport-image-parent">
-                        <img src="./assets/images/codm.jpg" alt="esport COMD event image" class="image1">
-                        <img src="./assets/images/ml.jpg" alt="esport ML event image" class="image2">
-                        <img src="./assets/images/schedule.jpg" alt="esport schedule" class="image3">
-                    </div>
-
-                    
                 </div>
+            </div>
 
-                <div class="esport comingsoon">
-                    <p>More exciting ICT club event</p>
-                   <p>Coming Soon...</p>
-                
-                
+            <!-- Coming Soon -->
+            <div class="waza-coming-soon">
+                <div class="coming-soon-card">
+                    <span class="coming-soon-icon">🚀</span>
+                    <h3 class="coming-soon-title">More Exciting ICT Club Events</h3>
+                    <p class="coming-soon-text">Coming Soon...</p>
+                    <div class="loading-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
                 </div>
             </div>
         </section>
+        
+        <!-- Image Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption" class="modal-caption"></div>
+        </div>
 
         <section class="getintouch" id="contact">
             <div class="container">
-                <div class="title gsap-title5 title-part">Contact Us</div>
+                <!-- <div class="title gsap-title5 title-part">Contact Us</div> -->
+
+                <div class="page-title">
+                    <div class="title gsap-title5 title-part">Contact Us</div>
+                    <div class="title-underline"></div>
+                </div>
         
                 <div class="cont-wrapper">
                     <div class="top-wrap mamawjud">
@@ -416,12 +463,13 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="header-info">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#event">Event</a>
+                <a href="#events">Event</a>
                 <a href="./pages/contact/contact.html">Contact</a>
             </div>
             <div class="socials">

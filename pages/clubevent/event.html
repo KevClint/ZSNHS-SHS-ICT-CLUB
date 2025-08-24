@@ -1,104 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./contact.css">
+    <title>ICT Club Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./event.css">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="container-logo-title">
                 <img src="/assets/icons/ICT CLUB-title-n-bg-gimp.png" alt="ICT CLUB logo image" class="logo-img">
-                <h1>
-                    ICT Club
-                </h1>
-    
+                <h1>ICT Club</h1>
             </div>
-    
+
             <div class="nav-link">
-                <a href="#">
-                    HOME
-                </a>
-                <a href="#">
-                    ABOUT
-                </a>
-                <a href="#">
-                    EVENT
-                </a>
-                <a href="../contact/contact.html">
-                    CONTACT
-                </a>
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">EVENT</a>
+                <a href="../contact/contact.html">CONTACT</a>
             </div>
-    
-    
+
             <div class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-    
+
             <div class="menubar">
                 <ul>
-                    <li>
-                        <a href="#aboutme">Home</a>
-                    </li>
-                    <li>
-                        <a href="#skills">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Event</a>
-                    </li>
-                    <li>
-                        <a href="#education">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">Facebook Page</a>
-                    </li>
+                    <li><a href="#aboutme">Home</a></li>
+                    <li><a href="#skills">About</a></li>
+                    <li><a href="#projects">Event</a></li>
+                    <li><a href="#education">Contact</a></li>
+                    <li><a href="#">Facebook Page</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
+    <main class="main-content">
+        <div class="page-title">
+            <h1>ICT Club Events</h1>
+            <div class="title-underline"></div>
+        </div>
 
+        <div class="events-container">
+            <!-- Esports Event -->
+            <div class="event-card">
+                <div class="event-content">
+                    <div class="event-details">
+                        <div class="event-badge">🎮 Featured Event</div>
 
-    <section class="events" id="events">
-        <div class="event-container">
-            <div class="title-event">
-                ICT Club Events
-            </div>
-    
-            <div class="esport">
-                <div class="esport-title">
-                    <h1>ZSNHS-SHS ESPORTS: ML & CODM 2025</h1>
-                    <p>Get ready for action! The ICT Club proudly presents the Esports Tournament featuring Mobile Legends:
-                        Bang Bang and Call
-                        of Duty: Mobile this September. <br>
-                        📅 Date: September 12 and 26 👀 <br>
-                        🕐 Time: 12:30 PM – 4:30 PM <br>
-                        📍 Venue: Building C, 4th Floor, Computer Laboratory</p>
-                    <a href="https://ictclub-esports-2025.vercel.app/" class="view-event">
-                        <button>VIEW THE OFFICIAL BRACKET</button>
-                    </a>
+                        <h2 class="event-title">ZSNHS-SHS ESPORTS: ML & CODM 2025</h2>
+
+                        <p class="event-description">
+                            Get ready for action! The ICT Club proudly presents the Esports Tournament featuring Mobile
+                            Legends: Bang Bang and Call of Duty: Mobile this September.
+                        </p>
+
+                        <div class="event-info-grid">
+                            <div class="info-card">
+                                <span class="info-icon">📅</span>
+                                <div class="info-text">September 12 & 26</div>
+                            </div>
+                            <div class="info-card">
+                                <span class="info-icon">🕐</span>
+                                <div class="info-text">12:30 PM – 4:30 PM</div>
+                            </div>
+                            <div class="info-card">
+                                <span class="info-icon">📍</span>
+                                <div class="info-text">Building C, 4th Floor</div>
+                            </div>
+                        </div>
+
+                        <a href="https://ictclub-esports-2025.vercel.app/" target="_blank" class="event-button">
+                            VIEW OFFICIAL BRACKET →
+                        </a>
+                    </div>
+
+                    <div class="image-gallery">
+                        <img src="/assets/images/codm.jpg" alt="Call of Duty Mobile Tournament" class="gallery-image"
+                            onclick="openModal(this.src, this.alt)">
+                        <img src="/assets/images/ml.jpg" alt="Mobile Legends Tournament" class="gallery-image"
+                            onclick="openModal(this.src, this.alt)">
+                        <img src="/assets/images/schedule.jpg" alt="Tournament Schedule" class="gallery-image"
+                            onclick="openModal(this.src, this.alt)">
+                    </div>
                 </div>
-    
-                <div class="esport-image-parent">
-                    <img src="./assets/images/codm.jpg" alt="esport COMD event image" class="image1">
-                    <img src="./assets/images/ml.jpg" alt="esport ML event image" class="image2">
-                    <img src="./assets/images/schedule.jpg" alt="esport schedule" class="image3">
-                </div>
-    
-    
             </div>
-    
-            <div class="esport comingsoon">
-                <p>More exciting ICT club event</p>
-                <p>Coming Soon...</p>
-    
-    
+
+            <!-- Coming Soon -->
+            <div class="coming-soon-card">
+                <span class="coming-soon-icon">🚀</span>
+                <h3 class="coming-soon-title">More Exciting ICT Club Events</h3>
+                <p class="coming-soon-text">Coming Soon...</p>
+                <div class="loading-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
             </div>
         </div>
-    </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="header-info">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#events">Event</a>
+                <a href="./pages/contact/contact.html">Contact</a>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/Clint.Lawrenze/">
+                    <i class="fa-brands fa-stack-overflow"></i>
+                </a>
+                <a href="https://www.youtube.com/@Clintxplayz">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://stackoverflow.com/users/28474690/kevlarclint">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://github.com/KevlarClint">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <div class="rights">
+                <p class="top-rights">©2025 Clint Lorenzo. All rights reserved. </p>
+                <p class="top-right">Made with ❤️ by Clint Lorenzo.</p>
+                <p class="last-rights">
+                    Build Using
+                    <i class="fa-brands fa-html5 rightsicon" style="color: #ff7b00;"></i>
+                    <i class="fa-brands fa-css3-alt rightsicon" style="color: #74C0FC;"></i>
+                    and
+                    <i class="fa-brands fa-js rightsicon" style="color: #FFD43B;"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(src, alt) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const caption = document.getElementById('caption');
+
+            modal.style.display = 'block';
+            modalImg.src = src;
+            caption.textContent = alt;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function (event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/25836a1afd.js" crossorigin="anonymous"></script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9741fe15f517a99c',t:'MTc1NjAyOTUyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
 </body>
+
 </html>
