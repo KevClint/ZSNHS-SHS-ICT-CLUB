@@ -8,7 +8,7 @@
 
 header {
   @include FlexCenter();
-  position: absolute;
+  position: fixed-;
   width: 100%;
 
   nav {

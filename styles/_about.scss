@@ -1,0 +1,79 @@
+@use './root';
+
+@mixin FlexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* About section */
+.about {
+  padding: 40px 24px 120px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+
+  h2 {
+    font-size: 44px;
+    margin: 40px 0 10px;
+    font-weight: 800;
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .nav {
+    left: 18px;
+    top: 14px;
+
+    .brand {
+      font-size: 17px;
+    }
+  }
+
+  .hero {
+    padding-top: 84px;
+
+    .subtitle {
+      font-size: 15px;
+    }
+  }
+
+  .about {
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+
+/* small utility */
+.screen-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(1, fr);
+    gap: 30px;
+}
+.whole-box, .whole-box2 {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid gray;
+    text-align: left;
+
+    .title-box {
+        font-size: var(--font-size-lg);
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .info-box {
+        font-size: var(--font-size-md);
+    }
+}
