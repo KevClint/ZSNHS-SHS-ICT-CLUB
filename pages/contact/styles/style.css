@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--main-font);
+  /* background-color: rgb(10, 10, 10);
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+
+      radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0.95) 10%,
+        rgba(0, 0, 0, 0) 70%
+      );
+
+  background-size: 40px 40px, 40px 40px, cover;
+  background-repeat: repeat, repeat, no-repeat;
+  background-position: center; */
+}
+
+:root {
+  /* DARK MODE */
+  --form-border: white;
+  --main-font: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  --text-color: black;
+  --fourth-box: #11182793;
+  --main-color: #145da0;
+}
+
+section {
+  width: 90%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  color: var(--text-color);
+  border: 2px solid black;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-shadow: var(--main-text-shadow);
+  background-color: transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+form h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.9rem;
+  font-size: clamp(1.9rem, 1.82rem + 0.4vw, 2.3rem);
+}
+form button {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: white;
+  margin-top: 10px;
+  font-family: var(--main-font);
+}
+form a {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 10px;
+  text-decoration-style: dashed;
+  color: var(--text-color);
+  text-underline-offset: 4px;
+  /* Increase this value as needed */
+  text-decoration-thickness: 2px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cont input,
+.cont textarea {
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cont input {
+  height: 40px;
+}
+.cont textarea {
+  height: 80px;
+  max-height: 150px;
+  resize: vertical;
+  padding-top: 10px;
+  font-family: var(--main-font);
+}/*# sourceMappingURL=style.css.map */

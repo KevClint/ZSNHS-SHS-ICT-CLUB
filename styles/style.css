@@ -18,8 +18,13 @@ header {
   justify-content: center;
   align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 69;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  background: transparent; /* default */
 }
 header nav {
   width: 90%;
@@ -34,6 +39,17 @@ header nav {
     justify-content: space-between;
     padding-top: 20px;
   }
+}
+
+header.scrolled {
+  background: rgba(255, 255, 255, 0.95); /* solid or semi-transparent bg */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px); /* nice glass effect */
+}
+header.scrolled nav.scrolled {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .container-logo-title {
