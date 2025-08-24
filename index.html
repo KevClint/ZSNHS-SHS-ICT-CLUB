@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Computer Club — Replica</title>
+    <title>ICT CLUB | ZSNHS-SHS </title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/favicon_io/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                 <a href="#">
                     EVENT
                 </a>
-                <a href="#">
+                <a href="./pages/contact/contact.html">
                     CONTACT
                 </a>
             </div>
@@ -53,10 +54,10 @@
                         <a href="#skills">About</a>
                     </li>
                     <li>
-                        <a href="#projects">Event</a>
+                        <a href="">Event</a>
                     </li>
                     <li>
-                        <a href="#education">Contact</a>
+                        <a href="./pages/contact/contact.html">Contact</a>
                     </li>
                     <li>
                         <a href="#">Facebook Page</a>
@@ -67,7 +68,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero-inner">
                 <div class="insta-pill">Follow along on Facebook!</div>
                 <h1 class="title">The <u>ICT Club</u> of<br />Zamboanga Del Sur National High School <u>Senior High
@@ -75,12 +76,14 @@
                 <p class="subtitle">Meet the Faces Behind ICT CLUB </p>
                 <div class="cta-row">
                     <button class="btn secondary">Events</button>
-                    <button class="btn primary">Contact Us!</button>
+                    <a href="./pages/contact/contact.html">
+                        <button class="btn primary">Contact Us!</button>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <sections class="about">
+        <sections class="about" id="about">
             <div class="arrow-title">
                 <h2>About ICT Club</h2>
                 <img src="./assets/icons/arrow_cool_down_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
@@ -312,14 +315,14 @@
                     aria-hidden="true" />
             </div>
 
-            <a href="">TEACHERS</a>
-            <a href="">OFFICERS</a>
+            <a href="./pages/officers-teachers/teachers.html">TEACHERS</a>
+            <a href="./pages/officers-teachers/officers.html">OFFICERS</a>
         </div>
 
 
         
 
-        <section class="events">
+        <section class="events" id="events">
             <div class="event-container">
                 <div class="title-event">
                      ICT Club Events
@@ -345,6 +348,13 @@
                     </div>
 
                     
+                </div>
+
+                <div class="esport comingsoon">
+                    <p>More exciting ICT club event</p>
+                   <p>Coming Soon...</p>
+                
+                
                 </div>
             </div>
         </section>
@@ -410,11 +420,9 @@
         <div class="container">
             <div class="header-info">
                 <a href="#home">Home</a>
-                <a href="#aboutme">Aboutme</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#event">Event</a>
+                <a href="./pages/contact/contact.html">Contact</a>
             </div>
             <div class="socials">
                 <a href="https://www.facebook.com/Clint.Lawrenze/">
@@ -431,7 +439,8 @@
                 </a>
             </div>
             <div class="rights">
-                <p class="top-rights">©2025 Clint Lorenzo. All rights reserved.</p>
+                <p class="top-rights">©2025 Clint Lorenzo. All rights reserved. </p>
+                <p class="top-right">Made with ❤️ by Clint Lorenzo.</p>
                 <p class="last-rights">
                     Build Using
                     <i class="fa-brands fa-html5 rightsicon" style="color: #ff7b00;"></i>

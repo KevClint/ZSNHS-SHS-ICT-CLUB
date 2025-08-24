@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contect Us | ICT Club</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h2>Contact Us</h2>
+
+            <!-- Hidden Access Key -->
+            <!-- ba221bee-934f-48d8-a8da-581ebbc171be -->
+            <input type="hidden" name="access_key" value="d32e29b4-081b-4c94-97a2-c034ba13235a">
+
+
+            <div class="name-con cont">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="email-con cont">
+                <!-- Email Field -->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+
+            <div class="mes-con cont">
+                <!-- Message Field -->
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Enter Your Message" required></textarea>
+            </div>
+
+            <!-- Honeypot -->
+            <input type="checkbox" name="botcheck" style="display: none;">
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Form</button>
+
+            <a href="/index.html">Back to frontpage</a>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -18,6 +18,7 @@ header {
   align-items: center;
   position: fixed;
   width: 100%;
+  z-index: 69;
 }
 header nav {
   width: 90%;
@@ -428,7 +429,7 @@ button a {
   background-color: var(--fourth-section);
 }
 .getintouch .container {
-  width: 90%;
+  width: 95%;
   max-width: 1600px;
   display: flex;
   justify-content: center;
@@ -488,7 +489,7 @@ button a {
 .top-wrap {
   flex: 1;
   border: 2px solid;
-  width: 95%;
+  width: 100%;
   max-width: 480px;
   border-radius: 12px;
 }
@@ -632,6 +633,9 @@ footer .container .rights .rightsicon {
 .events .event-container {
   width: 95%;
   max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .title-event {
@@ -754,7 +758,7 @@ a {
 main {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 45px;
 }
 
 .c {
@@ -778,7 +782,6 @@ main {
     gap: 12px;
     justify-content: center;
     padding: 12px;
-    background: #f9fafb;
   }
   .c-buttons .arrow-title {
     display: flex;

@@ -10,6 +10,7 @@ header {
   @include FlexCenter();
   position: fixed;
   width: 100%;
+  z-index: 69;
 
   nav {
     width: 90%;
