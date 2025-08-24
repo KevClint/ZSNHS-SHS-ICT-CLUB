@@ -2,6 +2,7 @@
 @use "./header";
 @use "./hero";
 @use "./about";
+@use './officers-teachers';
 
 :root {
   --bg: #ffffff;
@@ -35,4 +36,9 @@ a {
   color: var(--main-color-text);
   text-decoration: none;
   font-size: var(--font-size-base);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }

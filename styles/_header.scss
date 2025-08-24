@@ -8,7 +8,7 @@
 
 header {
   @include FlexCenter();
-  position: fixed-;
+  position: fixed;
   width: 100%;
 
   nav {
@@ -62,8 +62,8 @@ header {
     border-bottom: 2px solid transparent; /* reserve space */
     transition: border-color 0.3s ease; /* smooth effect */
 
-    &:nth-child(2) {
-      border-bottom: 2px solid white;
+    &:nth-child(1) {
+      border-bottom: 2px solid black;
     }
 
     &:hover {
@@ -73,55 +73,6 @@ header {
 
   @media screen and (max-width: 790px) {
     display: none;
-  }
-}
-
-.social-media {
-  @media screen and (max-width: 790px) {
-    display: none;
-  }
-
-  .button-26 {
-    appearance: button;
-    background-color: #1652f0;
-    border: 1px solid #1652f0;
-    border-radius: 4px;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-size: 14px;
-    line-height: 1.15;
-    overflow: visible;
-    padding: 12px 16px;
-    position: relative;
-    text-align: center;
-    text-transform: none;
-    transition: all 80ms ease-in-out;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: fit-content;
-
-    a {
-      color: var(--main-color-text);
-    }
-  }
-
-  .button-26:disabled {
-    opacity: 0.5;
-  }
-
-  .button-26:focus {
-    outline: 0;
-  }
-
-  .button-26:hover {
-    background-color: #0a46e4;
-    border-color: #0a46e4;
-  }
-
-  .button-26:active {
-    background-color: #0039d7;
-    border-color: #0039d7;
   }
 }
 
