@@ -1,4 +1,4 @@
-@use './root';
+@use "../utils/root" as *;
 
 /* HERO */
 .hero {
@@ -18,7 +18,7 @@
     display: inline-block;
     padding: 8px 16px;
     border-radius: 999px;
-    background: root.$pill-bg;
+    background: $pill-bg;
     box-shadow: 0 2px 0 rgba(10, 10, 10, 0.04),
       inset 0 0 0 2px rgba(11, 18, 32, 0.06);
     font-weight: 600;
@@ -36,7 +36,7 @@
   }
 
   .subtitle {
-    color: root.$muted;
+    color: $muted;
     font-weight: 500;
     font-size: 18px;
     max-width: 740px;
@@ -68,8 +68,8 @@
   }
 
   &.primary {
-    background: root.$button-bg;
-    color: root.$button-text;
+    background: $button-bg;
+    color: $button-text;
     border: 0;
     box-shadow: 0 6px 18px rgba(11, 18, 32, 0.08);
   }

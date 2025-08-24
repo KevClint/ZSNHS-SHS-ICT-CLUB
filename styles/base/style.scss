@@ -1,11 +1,10 @@
-@use "./root";
-@use "./header";
-@use "./hero";
-@use "./about";
-@use "./officers-teachers";
-@use "./getintouch";
-@use "./footer";
-@use "./event";
+@use "../utils/root";
+@use "../components/header";
+@use "../components/hero";
+@use "../components/about";
+@use "../components/officers-teachers";
+@use "../components/getintouch";
+@use "../components/footer";
 
 :root {
   --bg: #F1F2F4;
