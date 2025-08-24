@@ -1,7 +1,5 @@
-:root {
-  --accent: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
-  --shadow: 0 10px 32px rgba(11, 18, 32, 0.1);
-}
+@use "./root";
+
 .c {
   justify-content: center;
   align-items: center;
@@ -18,15 +16,11 @@
 
     .meet-the-heading {
       padding-inline: 15px;
-      font-size: 44px;
+      font-size: 2.2rem;
+      font-size: clamp(2.2rem, 2.1rem + 0.5vw, 2.7rem);
       margin: 40px 0 10px;
       font-weight: 600;
       text-align: center;
-
-      @media (width <= 720px) {
-        font-size: 28px;
-
-      }
     }
     img {
       padding-bottom: 10px;
@@ -52,7 +46,7 @@
   }
 }
 .card-off {
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow1);
   background-color: transparent;
   border: 2px solid black;
   padding: 10px;

@@ -8,7 +8,7 @@
 @use "./event";
 
 :root {
-  --bg: #ffffff;
+  --bg: #F1F2F4;
   --text: #0b1220;
   --muted: #6b6f76;
   --accent: #0b1220;
@@ -26,11 +26,10 @@
 
 // base
 body {
-  margin: 0;
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial;
-  background: root.$bg;
   color: root.$text;
+  background-color: root.$bg;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.3;

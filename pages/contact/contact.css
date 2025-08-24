@@ -42,25 +42,6 @@ body {
   --main-color: #145da0;
 }
 
-.toggle {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  height: 40px;
-  width: 50px;
-  border-radius: 5px;
-  font-family: var(--main-font);
-  font-weight: 500;
-  background-color: var(--main-color);
-  border: none;
-  display: grid;
-  place-items: center;
-  border: 2px solid var(--text-color);
-
-  & img {
-    filter: drop-shadow(0px 0px 20px blue);
-  }
-}
 
 section {
   width: 90%;
@@ -84,6 +65,7 @@ form {
   gap: 10px;
   text-shadow: var(--main-text-shadow);
   background-color: transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;;
 
   & h2 {
     text-align: center;
