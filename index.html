@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Computer Club — Replica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="brand">The Computer Club</div>
+            <div class="sub">Community Blog Posts</div>
+        </div>
+        <div class="nav-right">
+            <a class="github-btn" href="#" aria-label="GitHub">
+                <!-- Simple GitHub mark -->
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8 .198a8 8 0 00-2.53 15.59c.4.073.547-.174.547-.386 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.925-.89-1.173-.89-1.173-.727-.497.055-.487.055-.487.803.057 1.225.825 1.225.825.714 1.223 1.873.87 2.33.665.072-.517.28-.87.508-1.07-1.777-.2-3.644-.888-3.644-3.95 0-.873.312-1.588.824-2.149-.083-.202-.357-1.015.078-2.118 0 0 .672-.215 2.2.82A7.66 7.66 0 018 3.278c.68.003 1.366.092 2.006.27 1.526-1.035 2.197-.82 2.197-.82.437 1.103.163 1.916.08 2.118.513.561.823 1.276.823 2.149 0 3.07-1.87 3.748-3.652 3.943.288.248.544.737.544 1.486 0 1.073-.01 1.938-.01 2.202 0 .214.144.463.55.384A8.001 8.001 0 008 .198z"
+                        fill="#0b1220" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="insta-pill">Follow along on Instagram!</div>
+                <h1 class="title">The Computer Club of<br />Barrington High School</h1>
+                <p class="subtitle">Building life-long computer science interests in the students of Barrington High
+                    School</p>
+                <div class="cta-row">
+                    <button class="btn secondary">Posts</button>
+                    <button class="btn primary">Sign Up!</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+
+        <section class="about">
+            <h2>About Computer Club</h2>
+            <p style="max-width:720px;margin:12px auto;color:var(--muted);font-weight:500">We host weekly workshops,
+                build projects, and introduce students to coding, robotics, and computer science competitions. Everyone
+                is welcome — beginners and experienced coders alike.</p>
+        </section>
+    </main>
+
+    <script>
+        // small enhancement: keyboard focus style for accessibility
+        (function () {
+            const body = document.body;
+            function handleFirstTab(e) {
+                if (e.key === 'Tab') {
+                    body.classList.add('user-is-tabbing');
+                    window.removeEventListener('keydown', handleFirstTab);
+                }
+            }
+            window.addEventListener('keydown', handleFirstTab);
+        })();
+    </script>
+</body>
+
+</html>

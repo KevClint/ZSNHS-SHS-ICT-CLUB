@@ -1,0 +1,194 @@
+:root {
+  --bg: #ffffff;
+  --text: #0b1220;
+  --muted: #6b6f76;
+  --accent: #0b1220;
+  --pill-bg: #ffffff;
+  --button-bg: #0b1220;
+  --button-text: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.35;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 22px;
+  left: 36px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  z-index: 40;
+}
+
+.nav .brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav .sub {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-right {
+  position: fixed;
+  right: 26px;
+  top: 18px;
+  z-index: 40;
+}
+
+.github-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+}
+
+/* HERO */
+.hero {
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 110px 24px 60px;
+  /* leave space for fixed nav */
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.insta-pill {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--pill-bg);
+  box-shadow: 0 1px 0 rgba(10, 10, 10, 0.04),
+    inset 0 0 0 1px rgba(11, 18, 32, 0.06);
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+/* Big two-line title */
+.title {
+  font-weight: 800;
+  font-size: clamp(34px, 7.8vw, 86px);
+  letter-spacing: -1px;
+  margin: 8px 0 18px;
+  line-height: 0.98;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 18px;
+  max-width: 740px;
+  margin: 8px auto 26px;
+}
+
+.cta-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 10px 18px;
+  min-width: 72px;
+  border: 1px solid rgba(11, 18, 32, 0.06);
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(10, 10, 10, 0.03);
+}
+
+.btn.secondary {
+  background: #fff;
+}
+
+.btn.primary {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 0;
+  box-shadow: 0 6px 18px rgba(11, 18, 32, 0.08);
+}
+
+/* Spacer to emulate large empty area in design */
+.spacer {
+  height: 160px;
+}
+
+/* About section */
+.about {
+  padding: 40px 24px 120px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 44px;
+  margin: 40px 0 10px;
+  font-weight: 800;
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .nav {
+    left: 18px;
+    top: 14px;
+  }
+
+  .nav .brand {
+    font-size: 17px;
+  }
+
+  .hero {
+    padding-top: 84px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+}
+
+/* small utility */
+.screen-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
