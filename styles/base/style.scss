@@ -8,7 +8,7 @@
 @use "../components/footer";
 
 :root {
-  --bg: #F1F2F4;
+  --bg: #f1f2f4;
   --text: #0b1220;
   --muted: #6b6f76;
   --accent: #0b1220;
@@ -17,11 +17,19 @@
   --button-text: #fff;
 }
 
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   // outline: 2px solid blueviolet;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 // base
@@ -40,7 +48,7 @@ a {
 }
 main {
   display: flex;
-  flex-direction: column;   
+  flex-direction: column;
   gap: 45px;
 }
 
@@ -52,7 +60,7 @@ main {
   display: none;
 }
 
-/* On screens ≤ 425px */
+/* On screens ≤ 540px, this is for simplify of teachers and students*/
 @media (max-width: 540px) {
   .c {
     display: none;
