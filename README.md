@@ -43,11 +43,10 @@ This project uses modern web technologies:
 ICT-Club-Website/
 │
 ├── assets/              # Images, icons, and logos  
-├── css/                 # Compiled CSS files  
-├── scss/                # SCSS source files  
-├── js/                  # JavaScript scripts  
-├── pages/               # Subpages (events, officers, about, etc.)  
-└── index.html           # Main entry page  
+├── pages/               # Subpages (Event, Contact, and Officers/Teachers page )  
+├── src/                 # all .js file and reused html code  
+├── styles/              # Compiled Scss/Css Code  
+└── index.html           # Main entry page 
 
 
 
