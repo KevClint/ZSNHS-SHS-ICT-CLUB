@@ -14,6 +14,9 @@ This project is the **digital home of the ICT Club**, showcasing our **events, o
 ### ZSNHS-SHS Logo  
 <img src="assets/icons/zsnhs-shs-logo.jpg" alt="ZSNHS-SHS Logo" width="400">  
 
+### ZSNHS-SHS SSLG Logo  
+<img src="assets/icons/sslg-logo.jpg" alt="ZSNHS-SHS Logo" width="400">  
+
 ---
 
 ## 📖 About the Project  
