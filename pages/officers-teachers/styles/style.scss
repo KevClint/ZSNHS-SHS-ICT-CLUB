@@ -4,11 +4,19 @@
   --main-color-text: black;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
+*,
+*::before,
+*::after {
   padding: 0;
-  /* outline: 2px solid blueviolet; */
+  margin: 0;
+  box-sizing: border-box;
+  // outline: 2px solid blueviolet;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 body {
