@@ -106,7 +106,7 @@ header.scrolled nav.scrolled {
   border-bottom: 2px solid black;
 }
 .nav-link a:hover {
-  border-bottom: white; /* only color changes */
+  border-bottom: 2px solid black; /* only color changes */
 }
 @media screen and (max-width: 790px) {
   .nav-link {

@@ -13,7 +13,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 69;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s;
   z-index: 1000;
   background: transparent; /* default */
 
@@ -24,6 +24,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-top: 40px;
+    transition: all 0.3s;
 
     @media screen and (max-width: 790px) {
       justify-content: space-between;
@@ -35,10 +36,12 @@ header.scrolled {
   background: rgba(255, 255, 255, 0.95); /* solid or semi-transparent bg */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px); /* nice glass effect */
+  transition: all 0.3s;
 
   nav.scrolled {
     padding-top: 20px;
     padding-bottom: 10px;
+    transition: all 0.3s;
   }
 }
 
@@ -75,16 +78,19 @@ header.scrolled {
   a {
     font-size: var(--font-size-md);
     font-weight: bold;
-    border-top: transparent 2px solid;
     border-bottom: 2px solid transparent; /* reserve space */
-    transition: border-color 0.3s ease; /* smooth effect */
+    transition: all 0.3s; /* smooth effect */
 
     &:nth-child(1) {
       border-bottom: 2px solid black;
+
+      &:hover {
+        border-bottom: 2px solid white; /* only color changes */
+      }
     }
 
     &:hover {
-      border-bottom: white; /* only color changes */
+      border-bottom: 2px solid black; /* only color changes */
     }
   }
 

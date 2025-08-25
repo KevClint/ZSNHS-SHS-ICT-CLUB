@@ -23,7 +23,7 @@
       text-align: center;
     }
     img {
-      padding-bottom: 10px;
+      padding-bottom: 20px;
     }
   }
 }
@@ -39,10 +39,6 @@
   }
   @media (max-width: 640px) {
     grid-template-columns: repeat(2, 250px);
-  }
-  @media (max-width: 500px) {
-    grid-template-columns: repeat(1, 1fr);
-    place-items: center;
   }
 }
 .card-off {
