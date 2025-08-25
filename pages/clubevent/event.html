@@ -20,9 +20,8 @@
             </div>
 
             <div class="nav-link">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">EVENT</a>
+                <a href="/index.html">HOME</a>
+                <a href="https://zsnhs-shs-ict-club.vercel.app/#about">ABOUT</a>
                 <a href="../contact/contact.html">CONTACT</a>
             </div>
 
@@ -36,7 +35,6 @@
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="https://zsnhs-shs-ict-club.vercel.app/index.html#about">About</a></li>
-                    <li><a href="/pages/clubevent/event.html">Event</a></li>
                     <li><a href="/pages/contact/contact.html">Contact</a></li>
                     <li><a href="https://www.facebook.com/profile.php?id=61578725763399">Facebook Page</a></li>
                 </ul>
@@ -153,40 +151,8 @@
         </div>
     </footer>
 
-    <script>
-        const mobileNav = document.querySelector(".hamburger");
-        const menubar = document.querySelector(".menubar");
-
-        const toggleNav = () => {
-            menubar.classList.toggle("active");
-            mobileNav.classList.toggle("hamburger-active");
-        };
-        mobileNav.addEventListener("click", () => toggleNav());
-
-
-
-        function openModal(src, alt) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            const caption = document.getElementById('caption');
-
-            modal.style.display = 'block';
-            modalImg.src = src;
-            caption.textContent = alt;
-        }
-
-        function closeModal() {
-            document.getElementById('imageModal').style.display = 'none';
-        }
-
-        // Close modal when clicking outside the image
-        window.onclick = function (event) {
-            const modal = document.getElementById('imageModal');
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        }
-    </script>
+    <script src="./src/image-click.js"></script>
+    <script src="/src/script.js"></script>
     <script src="https://kit.fontawesome.com/25836a1afd.js" crossorigin="anonymous"></script>
     <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9741fe15f517a99c',t:'MTc1NjAyOTUyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
 </body>
