@@ -439,3 +439,9 @@ footer .container {
     height: 45px;
   }
 }
+
+//remove smth in header
+header .nav-link a[href="/pages/contact/contact.html"],
+footer .header-info a[href="/pages/contact/contact.html"] {
+  display: none !important;
+}

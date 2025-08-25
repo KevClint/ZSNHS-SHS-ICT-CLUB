@@ -413,4 +413,8 @@ footer .container {
     width: 45px;
     height: 45px;
   }
+}
+header .nav-link a[href="/pages/contact/contact.html"],
+footer .header-info a[href="/pages/contact/contact.html"] {
+  display: none !important;
 }/*# sourceMappingURL=style.css.map */

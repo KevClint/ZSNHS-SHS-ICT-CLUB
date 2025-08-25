@@ -40,6 +40,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 790px) {
   header nav {
@@ -567,7 +568,7 @@ footer .container {
   bottom: -5px;
   left: 0;
   background: #667eea;
-  transition: width 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .header-info a:hover::after {
@@ -640,4 +641,9 @@ footer .container {
     width: 45px;
     height: 45px;
   }
+}
+/* put in your global CSS */
+header .nav-link a[href="/pages/clubevent/event.html"],
+footer .header-info a[href="/pages/clubevent/event.html"] {
+  display: none !important;
 }/*# sourceMappingURL=style.css.map */
