@@ -29,7 +29,9 @@ html {
   scroll-behavior: smooth;
 }
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 // base
@@ -87,7 +89,7 @@ main {
         font-weight: 600;
         text-align: center;
 
-        @media (width <= 720px) {
+        @media (max-width: 720px) {
           font-size: 28px;
         }
       }

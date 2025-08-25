@@ -747,7 +747,7 @@ button a {
   border-radius: 10px;
   text-align: center;
 }
-@media (width <= 500px) {
+@media (max-width: 500px) {
   .card-off {
     max-width: 370px;
     width: 95%;
@@ -1101,7 +1101,7 @@ main {
     text-align: center;
   }
 }
-@media (max-width: 540px) and (width <= 720px) {
+@media (max-width: 540px) and (max-width: 720px) {
   .c-buttons .arrow-title .meet-the-heading {
     font-size: 28px;
   }
