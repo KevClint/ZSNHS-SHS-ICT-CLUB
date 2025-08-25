@@ -33,14 +33,14 @@
   grid-template-rows: repeat(7, 1fr);
   gap: 8px;
 
-  @media (width <= 1024px) {
+  @media (max-width: 1024px) {
     justify-content: center;
     grid-template-columns: repeat(2, 300px);
   }
-  @media (width <= 640px) {
+  @media (max-width: 640px) {
     grid-template-columns: repeat(2, 250px);
   }
-  @media (width <= 500px) {
+  @media (max-width: 500px) {
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
   }

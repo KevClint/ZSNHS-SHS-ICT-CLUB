@@ -51,11 +51,11 @@ header.scrolled {
     height: 45px;
     border-radius: 10%;
 
-    @media (width <= 768px) {
+    @media (max-width: 768px) {
       width: 43px;
       height: 43px;
     }
-    @media (width <= 425px) {
+    @media (max-width: 425px) {
       width: 40px;
       height: 40px;
     }

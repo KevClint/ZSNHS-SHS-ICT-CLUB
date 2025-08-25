@@ -32,7 +32,7 @@
     gap: 30px;
     width: 100%;
 
-    @media (width <= 680px) {
+    @media (max-width: 680px) {
       flex-direction: column;
     }
   }
