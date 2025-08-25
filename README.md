@@ -6,10 +6,10 @@ This project is the **digital home of the ICT Club**, showcasing our **events, o
 
 ---
 
-## 🖼️ Logos  
+## 🖼️ Official Logos  
 
 ### ICT Club Logo  
-<img src="assets/icons/ICT CLUB-title-n-bg-gimp.png" alt="ICT Club Logo" width="400">  
+<img src="assets/icons/ICT CLUB.png" alt="ICT Club Logo" width="400">  
 
 ### ZSNHS-SHS Logo  
 <img src="assets/icons/zsnhs-shs-logo.jpg" alt="ZSNHS-SHS Logo" width="400">  
