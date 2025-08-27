@@ -40,11 +40,6 @@ section {
   align-items: center;
   height: 100vh;
 }
-@media (max-width: 500px) {
-  section {
-    height: unset;
-  }
-}
 
 form {
   color: var(--text-color);
