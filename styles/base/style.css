@@ -768,6 +768,62 @@ button a {
   font-size: 1.1rem;
 }
 
+/* On screens ≤ 540px, this is for simplify of teachers and students*/
+@media (max-width: 540px) {
+  .c {
+    display: none;
+  }
+  .c-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    padding: 12px;
+  }
+  .c-buttons .arrow-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .c-buttons .arrow-title .meet-the-heading {
+    padding-inline: 15px;
+    font-size: 44px;
+    margin: 40px 0 10px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+@media (max-width: 540px) and (max-width: 720px) {
+  .c-buttons .arrow-title .meet-the-heading {
+    font-size: 28px;
+  }
+}
+@media (max-width: 540px) {
+  .c-buttons .arrow-title img {
+    padding-bottom: 10px;
+  }
+  .c-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 26px;
+    width: 95%;
+    max-width: 340px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0ea5e9, #6366f1);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  .c-buttons a:hover {
+    background: linear-gradient(135deg, #0284c7, #4f46e5);
+  }
+}
 /* lets connect */
 .getintouch {
   padding-top: 70px;
@@ -1071,61 +1127,4 @@ main {
 
 .c-buttons {
   display: none;
-}
-
-/* On screens ≤ 540px, this is for simplify of teachers and students*/
-@media (max-width: 540px) {
-  .c {
-    display: none;
-  }
-  .c-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    justify-content: center;
-    padding: 12px;
-  }
-  .c-buttons .arrow-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .c-buttons .arrow-title .meet-the-heading {
-    padding-inline: 15px;
-    font-size: 44px;
-    margin: 40px 0 10px;
-    font-weight: 600;
-    text-align: center;
-  }
-}
-@media (max-width: 540px) and (max-width: 720px) {
-  .c-buttons .arrow-title .meet-the-heading {
-    font-size: 28px;
-  }
-}
-@media (max-width: 540px) {
-  .c-buttons .arrow-title img {
-    padding-bottom: 10px;
-  }
-  .c-buttons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 26px;
-    width: 95%;
-    max-width: 340px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #0ea5e9, #6366f1);
-    color: white;
-    font-weight: 600;
-    font-size: 14px;
-    text-decoration: none;
-    transition: background 0.2s ease;
-  }
-  .c-buttons a:hover {
-    background: linear-gradient(135deg, #0284c7, #4f46e5);
-  }
 }/*# sourceMappingURL=style.css.map */
