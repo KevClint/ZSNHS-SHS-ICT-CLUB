@@ -612,11 +612,15 @@ button a {
   flex-direction: column;
   gap: 15px;
 }
-.about h2 {
+.about .arrow-title h2 {
   font-size: 2.2rem;
   font-size: clamp(2.2rem, 2.1rem + 0.5vw, 2.7rem);
   margin: 40px 0 10px;
   font-weight: 600;
+}
+.about .arrow-title img {
+  width: 24px;
+  height: 24px;
 }
 
 /* Responsive tweaks */
@@ -719,6 +723,8 @@ button a {
 }
 .meet-the .arrow-title img {
   padding-bottom: 20px;
+  width: 24px;
+  height: 24px;
 }
 
 .container-off {
