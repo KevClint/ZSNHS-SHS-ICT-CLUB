@@ -84,7 +84,10 @@ form {
     display: inline-flex;
     justify-content: center;
     margin-top: 10px;
-    text-decoration-style: dashed;
+    text-decoration: underline; // fallback
+    text-decoration-style: dashed; // may not render
+    text-underline-offset: 4px; // may not render
+    text-decoration-thickness: 2px; // may not render
     color: var(--text-color);
     text-underline-offset: 4px;
     /* Increase this value as needed */
@@ -151,9 +154,9 @@ header {
 }
 
 header.scrolled {
-  background: rgba(255, 255, 255, 0.95); /* solid or semi-transparent bg */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8px); /* nice glass effect */
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
   transition: all 0.3s;
 
   nav.scrolled {
