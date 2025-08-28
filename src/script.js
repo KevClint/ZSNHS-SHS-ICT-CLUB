@@ -35,9 +35,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-
-//
+// Clicking the event image and it will full screen
 function openModal(src, alt) {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImage");
