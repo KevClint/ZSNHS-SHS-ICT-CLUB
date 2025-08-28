@@ -43,13 +43,55 @@ This project uses modern web technologies:
 # 📂 Project Structure  
 
 ```plaintext
-ICT-Club-Website/
-│
-├── assets/              # Images, icons, and logos  
-├── pages/               # Subpages (Event, Contact, and Officers/Teachers page )  
-├── src/                 # all .js file and reused html code  
-├── styles/              # Compiled Scss/Css Code  
-└── index.html           # Main entry page 
+Directory structure:
+└── kevclint-zsnhs-shs-ict-club/
+    ├── README.md
+    ├── index.html
+    ├── LICENSE
+    ├── assets/
+    │   └── favicon_io/
+    │       └── site.webmanifest
+    ├── pages/
+    │   ├── clubevent/
+    │   │   ├── event.html
+    │   │   ├── src/
+    │   │   │   └── image-click.js
+    │   │   └── styles/
+    │   │       ├── style.css
+    │   │       └── style.scss
+    │   ├── contact/
+    │   │   ├── contact.html
+    │   │   └── styles/
+    │   │       ├── style.css
+    │   │       └── style.scss
+    │   └── officers-teachers/
+    │       ├── officers.html
+    │       ├── teachers.html
+    │       └── styles/
+    │           ├── style.css
+    │           └── style.scss
+    ├── src/
+    │   ├── header-transition.js
+    │   ├── script.js
+    │   └── ReuseHeaderFooter/
+    │       ├── footer.html
+    │       ├── header.html
+    │       └── load-header-footer.js
+    └── styles/
+        ├── base/
+        │   ├── style.css
+        │   └── style.scss
+        ├── components/
+        │   ├── _about.scss
+        │   ├── _event.scss
+        │   ├── _footer.scss
+        │   ├── _getintouch.scss
+        │   ├── _header.scss
+        │   ├── _hero.scss
+        │   └── _officers-teachers.scss
+        └── utils/
+            └── _root.scss
+
 
 
 
