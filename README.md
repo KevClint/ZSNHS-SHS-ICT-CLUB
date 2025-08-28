@@ -6,7 +6,7 @@ This project is the **digital home of the ICT Club**, showcasing our **events, o
 
 ---
 
-## 🖼️ Official Logos  
+# 🖼️ Official Logos  
 
 ### ICT Club Logo  
 <img src="assets/icons/ICT CLUB.png" alt="ICT Club Logo" width="400">  
@@ -19,7 +19,7 @@ This project is the **digital home of the ICT Club**, showcasing our **events, o
 
 ---
 
-## 📖 About the Project  
+# 📖 About the Project  
 
 The ICT Club Website is designed to:  
 - Highlight **events and activities** such as Esports tournaments, workshops, and tech talks.  
@@ -30,7 +30,7 @@ The ICT Club Website is designed to:
 
 ---
 
-## 🛠️ Tech Stack  
+# 🛠️ Tech Stack  
 
 This project uses modern web technologies:  
 - **HTML5** – page structure and semantic markup  
@@ -40,7 +40,7 @@ This project uses modern web technologies:
 
 ---
 
-## 📂 Project Structure  
+# 📂 Project Structure  
 
 ```plaintext
 ICT-Club-Website/
