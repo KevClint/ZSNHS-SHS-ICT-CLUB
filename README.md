@@ -1,44 +1,56 @@
-# 🌐 ICT Club Website – ZSNHS-SHS  
+# 🌐 ICT Club Website – ZSNHS-SHS
 
-Welcome to the official repository of the **ICT Club Website** for **Zamboanga del Sur National High School – Senior High School (ZSNHS-SHS)** 🎓💻  
-
-This project is the **digital home of the ICT Club**, showcasing our **events, officers, activities, and goals**.  
-It serves as a hub for **students, teachers, and the community** to learn more about our initiatives and connect with us.  
+Welcome to the official repository of the **ICT Club Website** for **Zamboanga del Sur National High School – Senior High School (ZSNHS-SHS)**.  
+This is the **digital home of the ICT Club**, showcasing our **events, officers, activities, and goals**—a hub for **students, teachers, and the community** to connect with us. 🎓💻
 
 ---
 
-## 🖼️ Official Logos  
+![Stars](https://img.shields.io/github/stars/KevClint/ZSNHS-SHS-ICT-CLUB?style=social)
+![License](https://img.shields.io/github/license/KevClint/ZSNHS-SHS-ICT-CLUB)
+![Last Commit](https://img.shields.io/github/last-commit/KevClint/ZSNHS-SHS-ICT-CLUB)
+![HTML5](https://img.shields.io/badge/HTML5-✓-E34F26)
+![SCSS](https://img.shields.io/badge/SCSS-✓-C76494)
+![JavaScript](https://img.shields.io/badge/JavaScript-✓-F7DF1E)
 
+## Table of Contents
+- [Official Logos](#-official-logos)
+- [About the Project](#-about-the-project)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Star History](#-star-history)
+- [Contributing](#-contributing)
+- [Acknowledgements](#-acknowledgements)
+- [License](#-license)
+
+---
+
+## 🖼️ Official Logos
 | ICT Club | ZSNHS-SHS | SSLG |
-|----------|-----------|------|
+|---|---|---|
 | <img src="assets/icons/ICT CLUB.png" alt="ICT Club Logo" width="200"> | <img src="assets/icons/zsnhs-shs-logo.jpg" alt="ZSNHS-SHS Logo" width="200"> | <img src="assets/icons/sslg-logo.jpg" alt="SSLG Logo" width="200"> |
 
 ---
 
-## 📖 About the Project  
-
-The ICT Club Website is designed to:  
-✅ Highlight **events and activities** such as Esports tournaments, workshops, and tech talks  
-✅ Showcase our **vision, mission, and goals**  
-✅ Introduce the **club officers and advisers**  
-✅ Provide ways to **contact and connect** with us  
-✅ Inspire **collaboration, creativity, and innovation** in the ICT field  
-
----
-
-## 🛠️ Tech Stack  
-
-This project uses modern web technologies:  
-
-- **HTML5** – page structure and semantic markup  
-- **SCSS (Dart Sass)** – clean, modular, and reusable styles  
-- **JavaScript (Vanilla)** – interactivity and DOM manipulation  
-- **GitHub Pages / Vercel** – fast and reliable deployment  
+## 📖 About the Project
+The ICT Club Website is designed to:
+- Highlight **events and activities** (Esports, workshops, tech talks)
+- Showcase our **vision, mission, and goals**
+- Introduce the **club officers and advisers**
+- Provide ways to **contact and connect** with us
+- Inspire **collaboration, creativity, and innovation** in ICT
 
 ---
 
-## 📂 Project Structure  
+## 🛠️ Tech Stack
+- **HTML5** – semantic, accessible structure  
+- **SCSS (Dart Sass)** – modular, maintainable styles  
+- **Vanilla JavaScript** – interactivity and DOM logic  
+- **GitHub Pages / Vercel** – simple, fast deployment  
 
+---
+
+## 📂 Project Structure
 ```plaintext
 kevclint-zsnhs-shs-ict-club/
 ├── README.md
