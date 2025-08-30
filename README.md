@@ -99,5 +99,31 @@ kevclint-zsnhs-shs-ict-club/
     │   └── _officers-teachers.scss
     └── utils/
         └── _root.scss
+```
+---
+## 🙌 Acknowledgements  
 
+This project would not have been possible without the support and contributions of many individuals and groups.  
+
+- **Zamboanga del Sur National High School – Senior High School (ZSNHS-SHS)**  
+  For providing the platform, encouragement, and continuous support in ICT initiatives.  
+
+- **ICT Club Officers and Advisers**  
+  For their leadership, guidance, and dedication in making this project a success.  
+
+- **SSLG (Supreme Secondary Learner Government)**  
+  For collaborating and supporting activities that empower student voices and initiatives.  
+
+- **ICT Club Members & Student Volunteers**  
+  For contributing their time, creativity, and ideas to design and improve the website.  
+
+- **Teachers, Mentors, and the School Community**  
+  For inspiring collaboration, innovation, and responsible use of technology.  
+
+💡 *Special thanks to everyone who believes in the power of ICT to connect, inspire, and create opportunities for students.*  
+
+---
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=KevClint/ZSNHS-SHS-ICT-CLUB&type=Date)](https://www.star-history.com/#KevClint/ZSNHS-SHS-ICT-CLUB&Date)
 
