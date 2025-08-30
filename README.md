@@ -92,6 +92,9 @@ Directory structure:
         └── utils/
             └── _root.scss
 
+```
+---
+## Star History
 
-
+[![Star History Chart](https://api.star-history.com/svg?repos=KevClint/ZSNHS-SHS-ICT-CLUB&type=Date)](https://www.star-history.com/#KevClint/ZSNHS-SHS-ICT-CLUB&Date)
 
