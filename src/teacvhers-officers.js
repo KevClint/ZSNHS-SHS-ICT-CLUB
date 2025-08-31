@@ -38,5 +38,5 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   });
 
-  console.log("Script loaded!");
+  console.log("Nag load naba o nag load naba, bwesit Script loaded!");
 });
