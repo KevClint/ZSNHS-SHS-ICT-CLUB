@@ -1,0 +1,25 @@
+{
+  "name": "ictclub2",
+  "version": "1.0.0",
+  "description": "Welcome to the official repository of the **ICT Club Website** for **Zamboanga del Sur National High School – Senior High School (ZSNHS-SHS)**.  \r This is the **digital home of the ICT Club**, showcasing our **events, officers, activities, and goals**—a hub for **students, teachers, and the community** to connect with us. 🎓💻",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevClint/ZSNHS-SHS-ICT-CLUB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevClint/ZSNHS-SHS-ICT-CLUB/issues"
+  },
+  "homepage": "https://github.com/KevClint/ZSNHS-SHS-ICT-CLUB#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
