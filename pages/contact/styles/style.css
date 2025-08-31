@@ -145,9 +145,9 @@ header nav {
 }
 
 header.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(128, 128, 128, 0.068);
   -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   transition: all 0.3s;
 }
 header.scrolled nav.scrolled {

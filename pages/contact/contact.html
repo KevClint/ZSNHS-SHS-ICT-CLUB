@@ -18,44 +18,37 @@
     <div id="header"></div>
 
     <section>
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <h2>Contact Us</h2>
-
-            <!-- Hidden Access Key -->
-            <!-- ba221bee-934f-48d8-a8da-581ebbc171be -->
-            <input type="hidden" name="access_key" value="d32e29b4-081b-4c94-97a2-c034ba13235a">
-
-
+        <form method="POST" id="form">
+            <div id="result" style="color: green;"></div>
             <div class="name-con cont">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
             </div>
-
+        
             <div class="email-con cont">
-                <!-- Email Field -->
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
             </div>
-
+        
             <div class="mes-con cont">
-                <!-- Message Field -->
                 <label for="message">Message</label>
                 <textarea name="message" id="message" placeholder="Enter Your Message" required></textarea>
             </div>
-
-            <!-- Honeypot -->
-            <input type="checkbox" name="botcheck" style="display: none;">
-
-            <!-- Submit Button -->
-            <button type="submit">Submit Form</button>
-
+        
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <button type="submit">Send Message</button>
+        
             <a href="/index.html">Back to frontpage</a>
         </form>
     </section>
+    
 
     <!-- Footer -->
     <div id="footer"></div>
 
+     <!-- Contact form script -->
+    <script src="/src/form.js"></script>
     <script src="/src/ReuseHeaderFooter/load-header-footer.js"></script>
     <script src="https://kit.fontawesome.com/25836a1afd.js" crossorigin="anonymous"></script>
 </body>
