@@ -98,8 +98,6 @@ kevclint-zsnhs-shs-ict-club/
     └── utils/
         └── _root.scss
 ```
-
-
 ---
 ## 🙌 Acknowledgements  
 
@@ -121,9 +119,11 @@ This project would not have been possible without the support and contributions 
   For inspiring collaboration, innovation, and responsible use of technology.  
 
 💡 *Special thanks to everyone who believes in the power of ICT to connect, inspire, and create opportunities for students.*  
+
 ---
 ## 📜 License
 This project is licensed under the MIT License.
+
 ---
 ## Star History
 
