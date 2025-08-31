@@ -17,11 +17,9 @@ This is the **digital home of the ICT Club**, showcasing our **events, officers,
 - [About the Project](#-about-the-project)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Star History](#-star-history)
-- [Contributing](#-contributing)
 - [Acknowledgements](#-acknowledgements)
 - [License](#-license)
+- [Star History](#-starhistory)
 
 ---
 
@@ -100,9 +98,7 @@ kevclint-zsnhs-shs-ict-club/
     └── utils/
         └── _root.scss
 ```
----
-## 📜 License
-This project is licensed under the MIT License.
+
 
 ---
 ## 🙌 Acknowledgements  
@@ -125,7 +121,9 @@ This project would not have been possible without the support and contributions 
   For inspiring collaboration, innovation, and responsible use of technology.  
 
 💡 *Special thanks to everyone who believes in the power of ICT to connect, inspire, and create opportunities for students.*  
-
+---
+## 📜 License
+This project is licensed under the MIT License.
 ---
 ## Star History
 
