@@ -216,9 +216,13 @@
                                 <p>https://github.com/KevlarClint</p>
                             </a>
                         </div>
+
+                        <div id="result" style="color: green;"></div>
                     </div>
                     <div class="bottom-wrap waza">
-                        <form action="/api/contact" method="POST">
+                        <form method="POST" id="form" >
+                            <input type="hidden" name="access_key" value="ba221bee-934f-48d8-a8da-581ebbc171be">
+
                             <div class="name-con cont">
                                 <label for="name">Name</label>
                                 <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
@@ -235,9 +239,8 @@
                                 <label for="message">Message</label>
                                 <textarea name="message" id="message" placeholder="Enter Your Message" required></textarea>
                             </div>
-                            
-                            <!-- Honeypot -->
-                            <input type="checkbox" name="botcheck" style="display: none;">
+
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                             <!-- Submit Button -->
                             <button type="submit">Send Message</button>
@@ -251,6 +254,7 @@
     <div id="footer"></div>
 
     <script src="/src/teacvhers-officers.js"></script>
+    <script src="/src/form.js"></script>
     <script src="./src/script.js"></script>
     <script src="/src/ReuseHeaderFooter/load-header-footer.js"></script>
     <script src="https://kit.fontawesome.com/25836a1afd.js" crossorigin="anonymous"></script>
