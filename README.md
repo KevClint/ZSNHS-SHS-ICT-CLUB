@@ -101,6 +101,10 @@ kevclint-zsnhs-shs-ict-club/
         └── _root.scss
 ```
 ---
+## 📜 License
+This project is licensed under the MIT License.
+
+---
 ## 🙌 Acknowledgements  
 
 This project would not have been possible without the support and contributions of many individuals and groups.  
@@ -127,8 +131,6 @@ This project would not have been possible without the support and contributions 
 
 [![Star History Chart](https://api.star-history.com/svg?repos=KevClint/ZSNHS-SHS-ICT-CLUB&type=Date)](https://www.star-history.com/#KevClint/ZSNHS-SHS-ICT-CLUB&Date)
 
----
-## 📜 License
-This project is licensed under the MIT License.
+
 
 
