@@ -146,6 +146,7 @@ header nav {
 
 header.scrolled {
   background: rgba(128, 128, 128, 0.068);
+  box-shadow: var(--shadow);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   transition: all 0.3s;
